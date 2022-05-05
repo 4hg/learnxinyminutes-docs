@@ -1,0 +1,65 @@
+---
+language: J
+filename: learnj.ijs
+contributors:
+  - ["South", "https://github.com/4hg"]
+---
+
+```
+NB. This is a comment, there are no group comments in J
+
+NB. Some numeric types
+1     NB. Integer
+_1    NB. Negative integer
+0.2   NB. Float, must never start with `.`
+1e100 NB. Scientific notation
+1j1   NB. Complex number
+_     NB. Infinity
+__    NB. Negative infinity
+_.    NB. Indeterminate 
+
+0 1   NB. Booleans are just integers
+
+NB. Characters
+'a'   NB. Characters are denoted with single quotes
+'abc' NB. Strings are arrays of characters
+
+NB. Basic arithmetic operations
+   1+1
+2
+   1-2
+_1
+   3*3
+9
+   6%2
+3
+
+NB. There is no precedence other than grouping with ()
+NB. Sentences are evaluated from right to left.
+   10 * 2 + 5
+70
+   (10 * 2) + 5
+25
+
+NB. Operations are vectorized
+   1 + 2 3 4
+3 4 5
+   1 2 3 + 4 5 6
+5 7 9
+   +: 1 2 3 NB. Monadic +: is double  
+2 4 6
+
+NB. Verbs, or functions, come as monads or dyads, which refer to arity
+NB. Monadic functions always accept the argument on the right
+NB. Dyadic functions are always infix
+   <. 10.23 NB. Monadic <. is floor
+10
+   20 <. 10 NB. Dyadic <. is min
+10
+
+```
+
+## Additional resources
+
+- [Getting Started](https://code.jsoftware.com/wiki/Guides/Getting_Started#Documentation_-_Books) - Several J learning resources.
+- [Online J Playground](https://jsoftware.github.io/j-playground/bin/html2/) - An online, interactive J REPL with samples and labs for learning
