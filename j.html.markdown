@@ -3,6 +3,7 @@ language: J
 filename: learnj.ijs
 contributors:
   - ["South", "https://github.com/4hg"]
+  - ["Razetime", "https://github.com/razetime"]
 ---
 
 ```
@@ -48,6 +49,16 @@ _1
 3
 
 NB. Basic logical verbs
+   1 < 0
+0
+   1 > 0
+1
+   1 = 0
+0
+   4 <: 3 NB. Less than or equal to
+0
+   4 >: 3 NB. Greater than or equal to
+1
 
 NB. There is no precedence for verbs other than grouping with ()
 NB. Sentences are evaluated from right to left.
